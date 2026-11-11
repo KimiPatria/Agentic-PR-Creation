@@ -1,0 +1,105 @@
+{
+  "_comment": "SIMULATED SAP data for local development. Every value here is fictional. Replace by switching Sap:Mode to S4Hana.",
+  "plants": [
+    { "code": "1100", "name": "Head Office Jakarta" },
+    { "code": "1200", "name": "Refinery Gresik" },
+    { "code": "1300", "name": "Mill Dumai" }
+  ],
+  "unitsOfMeasure": [
+    { "code": "EA", "name": "Each" },
+    { "code": "PC", "name": "Piece" },
+    { "code": "SET", "name": "Set" },
+    { "code": "BOX", "name": "Box" },
+    { "code": "KG", "name": "Kilogram" },
+    { "code": "L", "name": "Litre" },
+    { "code": "AU", "name": "Activity unit (services)" },
+    { "code": "MON", "name": "Month" },
+    { "code": "DAY", "name": "Day" }
+  ],
+  "purchasingGroups": [
+    { "code": "P01", "name": "IT Hardware and Software" },
+    { "code": "P02", "name": "IT Services" },
+    { "code": "P03", "name": "Office and General Supplies" },
+    { "code": "P04", "name": "Engineering and Spare Parts" },
+    { "code": "P05", "name": "Professional Services" }
+  ],
+  "glAccounts": [
+    { "number": "61100000", "name": "IT Equipment Expense (non-capital)" },
+    { "number": "61200000", "name": "Software Licence and Subscription" },
+    { "number": "61300000", "name": "IT Services and Maintenance" },
+    { "number": "62100000", "name": "Office Supplies" },
+    { "number": "62200000", "name": "Furniture and Fittings Expense" },
+    { "number": "63100000", "name": "Spare Parts and Consumables" },
+    { "number": "63200000", "name": "Repair and Maintenance Services" },
+    { "number": "64100000", "name": "Consulting and Professional Fees" },
+    { "number": "64200000", "name": "Training and Development" },
+    { "number": "16900000", "name": "Asset under Construction (AUC)" },
+    { "number": "16100000", "name": "Fixed Asset Acquisition Clearing" }
+  ],
+  "materialGroups": [
+    { "code": "IT01", "name": "Computers and Peripherals" },
+    { "code": "IT02", "name": "Network and Server Equipment" },
+    { "code": "IT03", "name": "Software Licences" },
+    { "code": "IT10", "name": "IT Implementation and Support Services" },
+    { "code": "GA01", "name": "Office Supplies and Stationery" },
+    { "code": "GA02", "name": "Furniture" },
+    { "code": "EN01", "name": "Mechanical Spare Parts" },
+    { "code": "EN10", "name": "Repair and Maintenance Services" },
+    { "code": "PS01", "name": "Consulting Services" },
+    { "code": "PS02", "name": "Training Services" }
+  ],
+  "materials": [
+    { "number": "100000101", "description": "Laptop 14in i7 16GB 512GB", "materialGroup": "IT01", "baseUom": "EA", "isStock": false },
+    { "number": "100000102", "description": "Monitor 27in QHD", "materialGroup": "IT01", "baseUom": "EA", "isStock": false },
+    { "number": "100000103", "description": "Wireless Keyboard and Mouse Set", "materialGroup": "IT01", "baseUom": "SET", "isStock": true },
+    { "number": "100000201", "description": "Network Switch 48-port PoE", "materialGroup": "IT02", "baseUom": "EA", "isStock": false },
+    { "number": "100000202", "description": "Rack Server 2U", "materialGroup": "IT02", "baseUom": "EA", "isStock": false },
+    { "number": "100000301", "description": "Office Productivity Suite Licence (1 yr)", "materialGroup": "IT03", "baseUom": "EA", "isStock": false },
+    { "number": "100000401", "description": "A4 Copy Paper 80gsm", "materialGroup": "GA01", "baseUom": "BOX", "isStock": true },
+    { "number": "100000402", "description": "Printer Toner Cartridge Black", "materialGroup": "GA01", "baseUom": "PC", "isStock": true },
+    { "number": "100000501", "description": "Ergonomic Office Chair", "materialGroup": "GA02", "baseUom": "EA", "isStock": false },
+    { "number": "100000601", "description": "Ball Bearing 6205-2RS", "materialGroup": "EN01", "baseUom": "PC", "isStock": true },
+    { "number": "100000602", "description": "Centrifugal Pump Mechanical Seal", "materialGroup": "EN01", "baseUom": "PC", "isStock": true },
+    { "number": "100000603", "description": "Gearbox Assembly Conveyor Drive", "materialGroup": "EN01", "baseUom": "EA", "isStock": false }
+  ],
+  "costCenters": [
+    { "code": "CC1101", "name": "IT Infrastructure", "companyCode": "1000" },
+    { "code": "CC1102", "name": "IT Applications", "companyCode": "1000" },
+    { "code": "CC1103", "name": "IT Service Desk", "companyCode": "1000" },
+    { "code": "CC1201", "name": "Finance and Accounting", "companyCode": "1000" },
+    { "code": "CC1301", "name": "Human Resources", "companyCode": "1000" },
+    { "code": "CC1401", "name": "General Affairs", "companyCode": "1000" },
+    { "code": "CC2101", "name": "Refinery Maintenance", "companyCode": "1000" },
+    { "code": "CC2201", "name": "Mill Operations", "companyCode": "1000" }
+  ],
+  "wbsElements": [
+    { "code": "C-2026-IT-001", "name": "Data Centre Refresh 2026", "budgetType": "Capex" },
+    { "code": "C-2026-IT-002", "name": "ERP Upgrade Programme", "budgetType": "Capex" },
+    { "code": "C-2026-EN-001", "name": "Refinery Boiler Replacement", "budgetType": "Capex" },
+    { "code": "O-2026-IT-001", "name": "Cybersecurity Awareness Campaign", "budgetType": "Opex" },
+    { "code": "O-2026-HR-001", "name": "Leadership Training Programme", "budgetType": "Opex" },
+    { "code": "O-2026-GA-001", "name": "Office Relocation Project", "budgetType": "Opex" }
+  ],
+  "assets": [
+    { "number": "200000001", "description": "End-user Computing Pool 2026", "assetClass": "3200", "costCenter": "CC1103" },
+    { "number": "200000002", "description": "Network Equipment Head Office", "assetClass": "3200", "costCenter": "CC1101" },
+    { "number": "200000003", "description": "Office Furniture Head Office", "assetClass": "3300", "costCenter": "CC1401" },
+    { "number": "200000004", "description": "Refinery Plant Machinery", "assetClass": "2000", "costCenter": "CC2101" }
+  ],
+  "budgets": [
+    { "objectType": "CostCenter", "objectCode": "CC1101", "currency": "IDR", "budget": 2500000000, "committed": 900000000, "actual": 1100000000 },
+    { "objectType": "CostCenter", "objectCode": "CC1102", "currency": "IDR", "budget": 1800000000, "committed": 300000000, "actual": 700000000 },
+    { "objectType": "CostCenter", "objectCode": "CC1103", "currency": "IDR", "budget": 600000000, "committed": 250000000, "actual": 330000000 },
+    { "objectType": "CostCenter", "objectCode": "CC1201", "currency": "IDR", "budget": 400000000, "committed": 50000000, "actual": 120000000 },
+    { "objectType": "CostCenter", "objectCode": "CC1301", "currency": "IDR", "budget": 750000000, "committed": 200000000, "actual": 310000000 },
+    { "objectType": "CostCenter", "objectCode": "CC1401", "currency": "IDR", "budget": 500000000, "committed": 100000000, "actual": 380000000 },
+    { "objectType": "CostCenter", "objectCode": "CC2101", "currency": "IDR", "budget": 6000000000, "committed": 2100000000, "actual": 2900000000 },
+    { "objectType": "CostCenter", "objectCode": "CC2201", "currency": "IDR", "budget": 4500000000, "committed": 1500000000, "actual": 2000000000 },
+    { "objectType": "Wbs", "objectCode": "C-2026-IT-001", "currency": "IDR", "budget": 12000000000, "committed": 4000000000, "actual": 3500000000 },
+    { "objectType": "Wbs", "objectCode": "C-2026-IT-002", "currency": "IDR", "budget": 8000000000, "committed": 6500000000, "actual": 1400000000 },
+    { "objectType": "Wbs", "objectCode": "C-2026-EN-001", "currency": "IDR", "budget": 25000000000, "committed": 9000000000, "actual": 7000000000 },
+    { "objectType": "Wbs", "objectCode": "O-2026-IT-001", "currency": "IDR", "budget": 300000000, "committed": 80000000, "actual": 90000000 },
+    { "objectType": "Wbs", "objectCode": "O-2026-HR-001", "currency": "IDR", "budget": 900000000, "committed": 150000000, "actual": 400000000 },
+    { "objectType": "Wbs", "objectCode": "O-2026-GA-001", "currency": "IDR", "budget": 1200000000, "committed": 700000000, "actual": 450000000 }
+  ]
+}

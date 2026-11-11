@@ -1,0 +1,38 @@
+# .NET
+bin/
+obj/
+*.user
+.vs/
+TestResults/
+
+# Node
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# CDK
+cdk.out/
+cdk.context.json
+
+# Local runtime data (attachments, mock SAP ledger, agent sessions) and test output
+.data/
+test-results/
+playwright-report/
+agent/evals/last-run.json
+
+# Local config and secrets
+.env
+.env.*
+!.env.example
+appsettings.Local.json
+
+# Editors / OS
+.idea/
+.DS_Store
+Thumbs.db

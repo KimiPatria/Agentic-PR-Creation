@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/PrAgent.Api/PrAgent.Api.csproj" />
+    <Project Path="src/PrAgent.Application/PrAgent.Application.csproj" />
+    <Project Path="src/PrAgent.Domain/PrAgent.Domain.csproj" />
+    <Project Path="src/PrAgent.Infrastructure/PrAgent.Infrastructure.csproj" />
+    <Project Path="src/PrAgent.Sap.Mock/PrAgent.Sap.Mock.csproj" />
+    <Project Path="src/PrAgent.Sap.S4Hana/PrAgent.Sap.S4Hana.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/PrAgent.IntegrationTests/PrAgent.IntegrationTests.csproj" />
+    <Project Path="tests/PrAgent.SapContractTests/PrAgent.SapContractTests.csproj" />
+    <Project Path="tests/PrAgent.UnitTests/PrAgent.UnitTests.csproj" />
+  </Folder>
+</Solution>
